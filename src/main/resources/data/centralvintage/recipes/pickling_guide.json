@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "create_central_kitchen:cooking_guide"
+    },
+    {
+      "item": "vintagedelight:fermenting_jar"
+    }
+  ],
+  "result": {
+    "item": "centralvintage:pickling_guide"
+  }
+}

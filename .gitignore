@@ -1,0 +1,16 @@
+.gradle/
+.agents/
+build/
+run/
+runs/
+
+*.log
+*.class
+*.jar
+!gradle/wrapper/gradle-wrapper.jar
+*.zip
+
+.vscode/
+
+.codex-tmp/
+.mixin.out/

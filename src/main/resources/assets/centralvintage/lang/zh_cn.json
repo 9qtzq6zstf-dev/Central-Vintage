@@ -1,0 +1,11 @@
+{
+  "item.centralvintage.pickling_guide": "腌制指南",
+  "itemGroup.centralvintage": "中央腌渍",
+  "configuration.centralvintage.fermenting_acceleration": "发酵加速",
+  "configuration.centralvintage.enableBlazeStoveFermentingAcceleration": "启用烈焰人炉灶发酵加速",
+  "configuration.centralvintage.enableBlazeStoveFermentingAcceleration.tooltip": "腌制罐放在 Create: Central Kitchen 的烈焰人炉灶上时，是否根据炉灶燃烧等级加快发酵速度。",
+  "configuration.centralvintage.normalBurningFermentingSpeedMultiplier": "普通燃烧发酵速度倍率",
+  "configuration.centralvintage.normalBurningFermentingSpeedMultiplier.tooltip": "烈焰人炉灶处于普通燃烧状态时的发酵速度倍率。对齐 Create: Central Kitchen 的 FADING/KINDLED 炉灶状态。",
+  "configuration.centralvintage.seethingFermentingSpeedMultiplier": "超级燃烧发酵速度倍率",
+  "configuration.centralvintage.seethingFermentingSpeedMultiplier.tooltip": "烈焰人炉灶处于超级燃烧状态时的发酵速度倍率。"
+}
