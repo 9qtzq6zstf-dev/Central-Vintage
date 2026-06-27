@@ -1,6 +1,7 @@
 package com.kazeshukufuku.centralvintage;
 
 import com.kazeshukufuku.centralvintage.config.CVConfig;
+import com.kazeshukufuku.centralvintage.registry.CVCreativeModeTabs;
 import com.kazeshukufuku.centralvintage.registry.CVItems;
 import com.kazeshukufuku.centralvintage.registry.CVMenus;
 import com.kazeshukufuku.centralvintage.registry.CVArmInteractionPointTypes;
@@ -22,6 +23,7 @@ public final class CentralVintage {
 
         IEventBus modBus = FMLJavaModLoadingContext.get().getModEventBus();
         CVItems.register(modBus);
+        CVCreativeModeTabs.register(modBus);
         CVMenus.register(modBus);
         modBus.addListener(CVArmInteractionPointTypes::register);
         modBus.addListener(this::addCreativeTabItems);

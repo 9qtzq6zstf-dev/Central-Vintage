@@ -1,6 +1,5 @@
 package com.kazeshukufuku.centralvintage.client;
 
-import com.kazeshukufuku.centralvintage.CentralVintage;
 import com.kazeshukufuku.centralvintage.registry.CVItems;
 import net.createmod.ponder.api.registration.PonderPlugin;
 import net.createmod.ponder.api.registration.PonderSceneRegistrationHelper;
@@ -14,7 +13,7 @@ public class CVPonderPlugin implements PonderPlugin {
 
     @Override
     public String getModId() {
-        return CentralVintage.MOD_ID;
+        return CENTRAL_KITCHEN;
     }
 
     @Override
