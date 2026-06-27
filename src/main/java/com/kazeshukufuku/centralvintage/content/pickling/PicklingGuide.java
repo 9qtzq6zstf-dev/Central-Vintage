@@ -18,6 +18,7 @@ public class PicklingGuide extends BlazeStoveGuide {
     private static final int INGREDIENT_SLOTS = 6;
 
     private final LazyOptional<PicklingGuide> capability = LazyOptional.of(() -> this);
+    private ItemStack secondaryResult = ItemStack.EMPTY;
 
     public PicklingGuide(ItemStack owner) {
         super(owner, INGREDIENT_SLOTS);
@@ -47,11 +48,17 @@ public class PicklingGuide extends BlazeStoveGuide {
         if (recipe.isPresent()) {
             FermentingRecipe fermentingRecipe = recipe.get();
             inventory.setStackInSlot(ingredientSize, fermentingRecipe.getResultItem(level.registryAccess()));
+            secondaryResult = fermentingRecipe.getSecondaryResultItem();
             container = fermentingRecipe.getContainerItemStack().copy();
         } else {
             inventory.setStackInSlot(ingredientSize, ItemStack.EMPTY);
+            secondaryResult = ItemStack.EMPTY;
             container = ItemStack.EMPTY;
         }
+    }
+
+    public ItemStack getSecondaryResult() {
+        return secondaryResult.copy();
     }
 
     private boolean matchesIngredients(FermentingRecipe recipe) {
